@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"hw_rcv_uncertain\startup_stm32f103xb.o"
+"hw_rcv_uncertain\main.o"
+"hw_rcv_uncertain\stm32f1xx_it.o"
+"hw_rcv_uncertain\stm32f1xx_hal_msp.o"
+"hw_rcv_uncertain\stm32f1xx_hal_gpio_ex.o"
+"hw_rcv_uncertain\stm32f1xx_hal_tim.o"
+"hw_rcv_uncertain\stm32f1xx_hal_tim_ex.o"
+"hw_rcv_uncertain\stm32f1xx_hal_uart.o"
+"hw_rcv_uncertain\stm32f1xx_hal.o"
+"hw_rcv_uncertain\stm32f1xx_hal_rcc.o"
+"hw_rcv_uncertain\stm32f1xx_hal_rcc_ex.o"
+"hw_rcv_uncertain\stm32f1xx_hal_gpio.o"
+"hw_rcv_uncertain\stm32f1xx_hal_dma.o"
+"hw_rcv_uncertain\stm32f1xx_hal_cortex.o"
+"hw_rcv_uncertain\stm32f1xx_hal_pwr.o"
+"hw_rcv_uncertain\stm32f1xx_hal_flash.o"
+"hw_rcv_uncertain\stm32f1xx_hal_flash_ex.o"
+"hw_rcv_uncertain\stm32f1xx_hal_exti.o"
+"hw_rcv_uncertain\system_stm32f1xx.o"
+--strict --scatter "HW_rcv_uncertain\HW_rcv_uncertain.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HW_rcv_uncertain.map" -o HW_rcv_uncertain\HW_rcv_uncertain.axf
